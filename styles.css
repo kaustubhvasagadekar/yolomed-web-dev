@@ -3,19 +3,25 @@ body{
     width: 100%;
     background: rgb(231, 226, 226);
 }
+
 nav{
-    background: rgba(255, 0, 0, 0.596);   
+    background: rgba(255, 0, 0, 0.596);  
+    
 }
 
 a{
     color: white ;
 }
-img{
+
+.img{
     width: 90px;
     height: auto;
-    margin: -20px 20px -20px 20px;
+    margin: -25px 20px -25px 20px;
 }
-
+main{
+    height: 55.7rem
+    
+}
 
 
 
