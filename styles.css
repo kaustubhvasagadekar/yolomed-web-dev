@@ -7,7 +7,7 @@ body {
 }
 
 nav {
-    background: rgba(255, 0, 0, 0.596);
+    background: #e34444;
     position: sticky;
     top: 0;
     z-index: 1020;
