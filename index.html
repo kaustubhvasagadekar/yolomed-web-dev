@@ -1,389 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- required -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- required -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>YoloMeds</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  
-  
-  
-  
-  <body>
-    <div>
-      <nav>
-        <nav class="navbar ticky-top navbar-expand-lg s">
-          <a href="#"> <img class="img" src="./img/new_logo.0cb939f9.png" /></a>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-          <button
-            class="navbar-toggler navbar-light bg-light"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <title>YoloMeds</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pharmacy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Diagnostic Centers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Hospital</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Doctors</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sujok</a>
-              </li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  More
-                </a>
-                <div
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdown"
-                  style="background: rgb(250, 155, 155)"
-                >
-                  <a class="dropdown-item" href="#">Ayurvedic</a>
-                  <a class="dropdown-item" href="#">Accupunture</a>
-                  <a class="dropdown-item" href="#">Homeopathy</a>
-                  <a class="dropdown-item" href="#">Yoga</a>
-                  <a class="dropdown-item" href="#">IVF</a>
-                  <a class="dropdown-item" href="#">Integrated Medicine</a>
-                  <a class="dropdown-item" href="#">Ambulance</a>
-                  <a class="dropdown-item" href="#">Blood Bank</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">My Lab Appointments</a>
-                  <a class="dropdown-item" href="#">My Doctor Appointments</a>
-                  <a class="dropdown-item" href="#">My Sujok Appointments</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-            <!-- Login Button trigger modal -->
-            <form class="form-inline my-2 my-lg-0">
-              <button type="button" class="btn" data-toggle="modal" data-target="#Login">Login/Signup</button>
-            </form>
-            <!-- Login Button trigger modal -->
 
-<!-- login madal -->
-<div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+
+<body>
+  <div>
+    <nav>
+      <nav class="navbar navbar-expand-lg ">
+        <a href="#"> <img class="img" src="./img/new_logo.0cb939f9.png" /></a>
+
+        <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          
 
-          <form class="px-4 py-3 pz-2">
-            <div class="form-group">
-              <label for="exampleDropdownFormEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-            </div>
-            <div class="form-group">
-              <label for="exampleDropdownFormPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="dropdownCheck">
-              <label class="form-check-label" for="dropdownCheck">
-                Remember me
-              </label>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
-          </form>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">New around here? Sign up</a>
-          <a class="dropdown-item" href="#">Forgot password?</a>
-       
-        <div class="divider" ></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pharmacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Diagnostic Centers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hospital</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Doctors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sujok</a>
+            </li>
 
-          <form class="px-lg-4 py-lg-3">
-            <div class="form-group">
-              <label for="exampleDropdownFormEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-            </div>
-            <div class="form-group">
-              <label for="exampleDropdownFormPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="dropdownCheck">
-              <label class="form-check-label" for="dropdownCheck">
-                Remember me
-              </label>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background: rgb(250, 155, 155)">
+                <a class="dropdown-item" href="#">Ayurvedic</a>
+                <a class="dropdown-item" href="#">Accupunture</a>
+                <a class="dropdown-item" href="#">Homeopathy</a>
+                <a class="dropdown-item" href="#">Yoga</a>
+                <a class="dropdown-item" href="#">IVF</a>
+                <a class="dropdown-item" href="#">Integrated Medicine</a>
+                <a class="dropdown-item" href="#">Ambulance</a>
+                <a class="dropdown-item" href="#">Blood Bank</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">My Lab Appointments</a>
+                <a class="dropdown-item" href="#">My Doctor Appointments</a>
+                <a class="dropdown-item" href="#">My Sujok Appointments</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <!-- Login Button trigger modal -->
+          <form class="form-inline my-2 my-lg-0">
+            <button type="button" class="btn" data-toggle="modal" data-target="#Login">Login/Signup</button>
           </form>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">New around here? Sign up</a>
-          <a class="dropdown-item" href="#">Forgot password?</a>
-        
-      </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- login madal -->
+          <!-- Login Button trigger modal -->
+
+          <!-- login madal -->
+          <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+
+
+                    <form class="px-4 py-3 pz-2">
+                      <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                          placeholder="email@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                          placeholder="Password">
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Remember me
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">New around here? Sign up</a>
+                    <a class="dropdown-item" href="#">Forgot password?</a>
+
+                    <div class="divider"></div>
+
+                    <form class="px-lg-4 py-lg-3">
+                      <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                          placeholder="email@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                          placeholder="Password">
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Remember me
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">New around here? Sign up</a>
+                    <a class="dropdown-item" href="#">Forgot password?</a>
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </nav>
+          <!-- login madal -->
+        </div>
       </nav>
-      <main>
-        <div class="container-fluid">
-          body
-      
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="icon-card">
-                <div class="btn-group">
+    </nav>
+
+    <main>
+      <div class="container-fluid">
+        body
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="icon-card">
+              <div class="btn-group">
                 <img src=" " alt="..." class="img-thumbnail" />
-                </div>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="icon-card">
-                <div class="btn-group">
+          </div>
+          <div class="col-sm-4">
+            <div class="icon-card">
+              <div class="btn-group">
                 <img src="..." alt="..." class="img-thumbnail" />
-                </div>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="icon-card">
-                <div class="btn-group">
+          </div>
+          <div class="col-sm-4">
+            <div class="icon-card">
+              <div class="btn-group">
                 <img src="..." alt="..." class="img-thumbnail" />
-                </div>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="icon-card">
-                <div class="btn-group">
+          </div>
+          <div class="col-sm-4">
+            <div class="icon-card">
+              <div class="btn-group">
                 <img src="..." alt="..." class="img-thumbnail" />
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </main>
-      <footer>
-        footer
-        <!-- <div>
-          <div
-            style="
-              margin-top: 13px;
-              padding-bottom: 50px;
-              background-color: rgb(202, 213, 226);
-            "
-          >
-            <hr
-              role="separator"
-              aria-orientation="horizontal"
-              class="v-divider theme--light"
-              style="
-                color: rgb(2, 133, 204);
-                border: 5px solid rgb(2, 133, 204);
-              "
-            />
-            <div class="container-fluid">
-              <div class="container">
+      </div>
+    </main>
+
+    <footer>
+      footer
+      <div class=" ">
+        <footer class="bg-dark py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
                 <div class="row">
-                  <div
-                    class="col-md-3 col-12"
-                    style="display: flex; flex-direction: column"
-                  >
-                    <strong style="font-size: 18px; margin-bottom: 20px"
-                      >Partner with Yolomed</strong
-                    >
-                    <div><a class="link">Pharmacy</a></div>
-                    <div><a class="link">Sujok</a></div>
-                    <div><a class="link">Diagnostic Center</a></div>
-                    <div><a class="link">Doctor</a></div>
-                    <div><a class="link">Homeopathy</a></div>
-                    <div><a class="link">Ayurvedic</a></div>
-                    <div><a class="link">Integrated Medicine</a></div>
-                    <div><a class="link">Accupunture</a></div>
-                    <div><a class="link">Yoga</a></div>
-                  </div>
-                  <div
-                    class="col-md-3 col-12"
-                    style="display: flex; flex-direction: column"
-                  >
-                    <strong style="font-size: 18px; margin-bottom: 20px"
-                      >Quicklinks</strong
-                    ><a class="link">Pharmacies near you</a
-                    ><a class="link">Diagnostic Centers near you</a
-                    ><a class="link">Find the nearest Ambulance</a
-                    ><a class="link">Blood Banks near you </a
-                    ><a class="link">Sujok Therapists near you </a
-                    ><a class="link">Hospitals near you </a
-                    ><a class="link">Find a Yoga Practitioner </a
-                    ><a class="link">Book an Appointment </a>
-                  </div>
-                  <div
-                    class="col-md-3 col-12"
-                    style="display: flex; flex-direction: column"
-                  >
-                    <strong style="font-size: 18px; margin-bottom: 20px"
-                      >Need Help</strong
-                    ><a class="link">info@indianmedhelp.com</a
-                    ><a href="" class="link">FAQ</a><a class="link">About Us</a
-                    ><a class="link">Contact Us</a
-                    ><strong
-                      style="
-                        font-size: 18px;
-                        margin-top: 50px;
-                        margin-bottom: 20px;
-                      "
-                      >Policy Info</strong
-                    ><a class="link">Privacy Policy</a
-                    ><a class="link">Terms and Conditions</a
-                    ><a class="link">Refunds and Cancellation</a>
-                  </div>
-                  <div
-                    class="col-md-2 col-12"
-                    style="display: flex; flex-direction: column"
-                  >
-                    <strong>Follow Us</strong>
-                    <div style="display: flex; flex-direction: row">
-                      <button
-                        type="button"
-                        class="ma-3 v-btn v-btn--icon v-btn--round theme--dark v-size--default"
-                      >
-                        <span class="v-btn__content"
-                          ><a href="https://www.facebook.com/indianmedhelp"
-                            ><i
-                              aria-hidden="true"
-                              class="v-icon notranslate mdi mdi-facebook theme--dark"
-                              style="
-                                font-size: 40px;
-                                color: rgb(0, 128, 128);
-                                caret-color: rgb(0, 128, 128);
-                              "
-                            ></i></a
-                        ></span></button
-                      ><button
-                        type="button"
-                        class="ma-3 v-btn v-btn--icon v-btn--round theme--dark v-size--default"
-                      >
-                        <span class="v-btn__content"
-                          ><a href="https://twitter.com/indianmedhelp"
-                            ><i
-                              aria-hidden="true"
-                              class="v-icon notranslate mdi mdi-twitter theme--dark"
-                              style="
-                                font-size: 40px;
-                                color: rgb(0, 128, 128);
-                                caret-color: rgb(0, 128, 128);
-                              "
-                            ></i></a
-                        ></span></button
-                      ><button
-                        type="button"
-                        class="ma-3 v-btn v-btn--icon v-btn--round theme--dark v-size--default"
-                      >
-                        <span class="v-btn__content"
-                          ><a href="https://www.instagram.com/indianmedhelp/"
-                            ><i
-                              aria-hidden="true"
-                              class="v-icon notranslate mdi mdi-instagram theme--dark"
-                              style="
-                                font-size: 40px;
-                                color: rgb(0, 128, 128);
-                                caret-color: rgb(0, 128, 128);
-                              "
-                            ></i></a
-                        ></span>
-                      </button>
+                  <div class="accordion w-100 d-lg-flex" id="accordion">
+                    <div class="col-lg-4 col-md-12">
+                      <a href="#one" data-toggle="collapse"
+                        class="h5 text-uppercase text-white nav-link p-0 d-block d-lg-none d-xl-none">Useful Links</a>
+
+                      <div class="h5 text-uppercase text-white p-0 d-none d-lg-block d-xl-block">
+                        Useful Links
+                      </div>
+
+                      <div class="collapse text-white d-lg-flex" id="one" data-parent="#accordion">
+                        <ul class="list-unstyled">
+                          <li>
+                            <a href="#" class="nav-link p-0 text-white">Menu1</a>
+                          </li>
+                          <li>
+                            <a href="#" class="nav-link p-0 text-white">Menu2</a>
+                          </li>
+                          <li>
+                            <a href="#" class="nav-link p-0 text-white">Menu3</a>
+                          </li>
+                          <li>
+                            <a href="#" class="nav-link p-0 text-white">Menu4</a>
+                          </li>
+                          <li>
+                            <a href="#" class="nav-link p-0 text-white">Menu5</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4 col-12">
-                    <strong>Payment Partners</strong> <br /><img
-                      src="/img/razorpay.fcfab237.png"
-                      alt=""
-                      style="height: 50px; width: 200px"
-                    />
-                  </div>
-                  <div
-                    class="col-md-8 col-12"
-                    style="margin-left: calc(-50px + 50vw)"
-                  >
-                    © 2021 IMH Healthcare services pvt ltd. All Rights Reserved
+                    <div class="col-lg-4 col-md-12">
+                      <a href="#two" data-toggle="collapse"
+                        class="h5 text-uppercase text-white nav-link p-0 d-block d-lg-none d-xl-none">Two</a>
+                      <div class="h5 text-uppercase text-white p-0 d-none d-lg-block d-xl-block">
+                        Two
+                      </div>
+                      <div class="collapse text-white d-lg-flex" id="two" data-parent="#accordion">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Itaque ratione quis doloribus, numquam ipsam voluptatibus
+                        quia harum molestiae officia dolorum deserunt nihil soluta
+                        dignissimos quibusdam cum nulla, similique illum. Rerum.
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                      <a href="#three" data-toggle="collapse"
+                        class="h5 text-uppercase text-white nav-link p-0 d-block d-lg-none d-xl-none">Three</a>
+                      <div class="h5 text-uppercase text-white p-0 d-none d-lg-block d-xl-block">
+                        Three
+                      </div>
+                      <div class="collapse text-white d-lg-flex" id="three" data-parent="#accordion">
+                        <div class="d-flex w-100 justify-content-between">
+                          <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                          <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                          <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+                          <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> -->
-        
-        <footer class="footer bg-info">
+        </footer>
+        <div class="container-fluid">
+          <div class="row bg-danger">
+            <div class="col-md-12">
+              <div class="d-flex justify-content-center align-items-center">
+                <span class="p-3 text-white">
+                  Ghareebs-web-dev &copy; Copyright 2022
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+
+    <!-- <footer class="footer bg-info">
           <div class="container text-dark">
             <span class="text-muted ">Place sticky footer content here.</span>
           </div>
-        </footer>
-      </footer>
-    </div>
+        </footer> -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
