@@ -21,7 +21,7 @@ a {
 nav .img {
     width: 90px;
     height: auto;
-    margin: -25px 20px -25px 3px !important;
+    margin: -25px 20px -25px -5px !important;
 
 }
 main {
@@ -32,11 +32,16 @@ main {
     width: auto;
     height: 50vh;
     max-height: 50vh;
-
 }
 .blue-tx{
 color: #33a1ff;
 }
-
-
-
+.card{
+    border-radius: 50px;
+    border-color: transparent;
+}
+.icon-btn{
+    height: 170px;
+    width: auto;
+    margin: 5% 0% 5% 25%;
+}
