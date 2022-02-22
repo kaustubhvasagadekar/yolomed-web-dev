@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Courgette");
 
 body {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    background: rgb(231, 226, 226);
+    background: #33a1ff;
 }
 
 nav {
     background: #e34444;
     position: sticky;
     top: 0;
-    z-index: 1020;
 }
 
 a {
@@ -20,9 +19,20 @@ a {
 .img {
     width: 90px;
     height: auto;
-    margin: -25px 20px -25px 20px;
+    margin: -25px 20px -25px 3px;
+
+}
+main {
+    height: 30rem
 }
 
-main {
-    height: 55.7rem
+.btn-icon{
+    width: auto;
+    height: 50vh;
+    max-height: 50vh;
+
 }
+.blue-tx{
+color: #33a1ff;
+}
+
